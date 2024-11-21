@@ -1,54 +1,74 @@
 package models;
 
 public class Productos {
-    //declaramos las variables para crear el objeto producto
-    private Long idProducto;
-    private String nombreProducto;
-    private String categoria;
-    private double precioProducto;
-    //Implementamso el contructor vacio
+    // Declaración de variables para gestionar información de clientes
+    private Long idCliente;
+    private String nombre;
+    private String direccion;
+    private String tipoDocumento;
+    private String numeroDocumento;
+    private String telefono;
 
+    // Constructor vacío
     public Productos() {
     }
 
-    public Productos(Long idProducto, String nombreProducto, String categoria, double precioProducto) {
-        this.idProducto = idProducto;
-        this.nombreProducto = nombreProducto;
-        this.categoria = categoria;
-        this.precioProducto = precioProducto;
+    // Constructor con parámetros
+    public Productos(Long idCliente, String nombre, String direccion, String tipoDocumento, String numeroDocumento, String telefono) {
+        this.idCliente = idCliente;
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.tipoDocumento = tipoDocumento;
+        this.numeroDocumento = numeroDocumento;
+        this.telefono = telefono;
     }
 
-    //Métodos Get y set
-
-    public Long getIdProducto() {
-        return idProducto;
+    // Métodos Get y Set
+    public Long getIdCliente() {
+        return idCliente;
     }
 
-    public void setIdProducto(Long idProducto) {
-        this.idProducto = idProducto;
+    public void setIdCliente(Long idCliente) {
+        this.idCliente = idCliente;
     }
 
-    public String getNombreProducto() {
-        return nombreProducto;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setNombreProducto(String nombreProducto) {
-        this.nombreProducto = nombreProducto;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public String getCategoria() {
-        return categoria;
+    public String getDireccion() {
+        return direccion;
     }
 
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 
-    public double getPrecioProducto() {
-        return precioProducto;
+    public String getTipoDocumento() {
+        return tipoDocumento;
     }
 
-    public void setPrecioProducto(double precioProducto) {
-        this.precioProducto = precioProducto;
+    public void setTipoDocumento(String tipoDocumento) {
+        this.tipoDocumento = tipoDocumento;
+    }
+
+    public String getNumeroDocumento() {
+        return numeroDocumento;
+    }
+
+    public void setNumeroDocumento(String numeroDocumento) {
+        this.numeroDocumento = numeroDocumento;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 }

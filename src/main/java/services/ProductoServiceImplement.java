@@ -8,8 +8,10 @@ import java.util.List;
 public class ProductoServiceImplement implements ProductoService {
     @Override
     public List<Productos> listar() {
-        return Arrays.asList(new Productos(1L, "laptop", "tecnología", 650.25),
-                new Productos(2L, "cocina","hogar", 452.15),
-                new Productos(3L, "cama", "dormitorio",254.20));
+        return Arrays.asList(
+                new Productos(1, "Juan Pérez", "Calle 123", "CI", "12345678", "9746323"),
+                new Productos(2, "Ana López", "Av. Principal 45", "Pasaporte", "A1234567", "5123456"),
+                new Productos(3, "Carlos Gómez", "Calle Secundaria 789", "CI", "87654321", "78974312")
+        );
     }
 }
