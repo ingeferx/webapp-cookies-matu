@@ -9,7 +9,7 @@ public class ProductoServiceImplement implements ProductoService {
     @Override
     public List<Productos> listar() {
         return Arrays.asList(
-                new Productos(1, "Jose Pérez", "Calle 123", "CI", "12345678", "9746323"),
+                new Productos(1, "Jose Pérez", "Calles 123", "CI", "12345678", "9746323"),
                 new Productos(2, "Ana López", "Av. Principal 45", "Pasaporte", "A1234567", "5123456"),
                 new Productos(3, "Carlos Gómez", "Calle Secundaria 789", "CI", "87654321", "78974312")
         );
